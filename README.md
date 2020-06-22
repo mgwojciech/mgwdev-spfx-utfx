@@ -1,5 +1,19 @@
 # mgwdev-spfx-utfx
-Mocking helper for SPFx
+This library will help You with writing unit tests for SPFx solutions.
+There are three supported configuration You can use
+
+1) integration - which uses credentials provided in config to connect with SharePoint and uses the connection to communicate with SharePoint whenever context.spHttpClient is used.
+2) integrationWithFileGeneration - same as 1) but also generated file with responses in provided path (second argument of MockHttpClientFactory.setupContextFromConfig).
+3) isolated - tests will not communicate with Your tenant. Only data provided in file will be used.
+
+# How to use it
+
+The scenario I had in mind is following.
+You write Your test in integraation mode
+Write the logic
+Test passess
+Switch to isolated mode
+You have Your unit test!
 
 # Installation
 
