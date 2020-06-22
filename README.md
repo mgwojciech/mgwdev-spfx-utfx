@@ -11,7 +11,8 @@ Here is the simpliest possible test You can write.
 Of course You can inject context anywhere You will need web part or extension context.
 
 
-```/// <reference types="jest" />
+```
+/// <reference types="jest" />
 
 import { assert } from "chai";
 import { MockHttpClientFactory, TestConfiguration, IMockSPHttpClient } from "mgwdev-spfx-utfx";
@@ -53,4 +54,5 @@ describe("Test UTFX", () => {
     afterAll(async() => {
         await context.spHttpClient.dispose();
     });
-});```
+});
+```
