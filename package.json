@@ -1,0 +1,41 @@
+{
+  "name": "mgwdev-spfx-utfx",
+  "version": "1.0.0",
+  "description": "Library to help You out with unit testing",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "m.g.wojciechowski@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/jest": "^26.0.0",
+    "chai": "^4.2.0",
+    "jest": "^25.2.7",
+    "jest-cli": "^25.2.7",
+    "node-sp-auth": "^2.5.9",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.9.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "@ms/sp-telemetry": "identity-obj-proxy",
+      "@microsoft/": "identity-obj-proxy",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "devDependencies": {
+    "identity-obj-proxy": "^3.0.0"
+  }
+}
