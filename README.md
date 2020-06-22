@@ -1,4 +1,6 @@
 # mgwdev-spfx-utfx
+ [Link to the repo](https://github.com/mgwojciech/mgwdev-spfx-utfx)
+
 This library will help You with writing unit tests for SPFx solutions.
 There are three supported configuration You can use
 
